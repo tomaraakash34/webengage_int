@@ -1,0 +1,78 @@
+#container {
+    position: initial;
+    padding: 0px;
+    z-index: 100;
+}
+
+#expand-container {
+    overflow: visible;
+}
+
+#expand-contract { 
+    margin-top: -100%;
+    transition: all 1s;
+}
+
+#expand-contract.expanded {
+    padding: 15;
+    background-color: #ffffff;
+    margin-top: 0;
+    
+}
+
+.card {
+    width:230px;
+    height: 277px;
+    margin: 15px 12px;
+    border-radius: 8px;
+    border-width: 2px;
+    padding: 12px;
+    border-color: black;
+    box-shadow: 2px 4px 4px 4px rgba(0, 0, 0, 0.4);
+    transition: 0.3s;
+}
+
+
+.container {
+    padding: 2px 16px;
+
+}
+
+
+#page{
+    background-color: dodgerblue;
+}
+
+
+#cards-container{
+    display: flex;
+    margin-left: -5px;
+}
+
+
+.button1{
+    border: 0px solid transparent;
+    padding: 12px 15px;
+    text-align: center;
+    transition: 0.5s;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    background-image: linear-gradient(to right,rgb(0, 162, 255),blue);
+    cursor: pointer;
+}
+
+#close{
+    font-weight: 400;
+    height: 2px;
+    font-size: 26px;
+    margin-left: 178px;
+    cursor: pointer;
+    margin-top: 92px;
+}
+
+span{
+    font-size: 14px;
+    position: relative;
+    bottom: 4px;
+}

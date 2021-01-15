@@ -1,0 +1,85 @@
+<html>
+  <head>
+    <link link rel="stylesheet" href="PopUp.css" />
+    <script src="PopUp.js"></script>
+  </head>
+
+
+
+
+  
+
+  <body style="margin: 0px;" id = "page" onload="expandPopUp()">
+   
+
+
+    <div id="container">
+
+      <div id="expand-container">
+        <div id="expand-contract" class="collapsed">         
+          <h2 style="line-height: 0%;">More Deals for You!</h2>
+          <h3> More discounts for your flight</h3>
+
+
+         <div id= "cards-container">
+          <div class="card">
+            <h1>Coupon Code</h1>
+              <h4>Flat</h4>
+              <h2 style="line-height: 0%;">Rs.500 <span>OFF</span></h2>
+              <br>
+              <h4 id="code1" style="line-height: 0%;">MMTFLAT500T</h4>
+              <p style="font-weight: lighter; font-size: 12px;">*Valid on Min 3 Tickets Booking</p>
+              <button id="btn1" class="button1" onclick="copyCode(this.id)">COPY CODE</button>
+          </div>
+
+
+          <div class="card">
+            <h1>Coupon Code</h1>
+            <h4>Flat</h4>
+            <h2 style="line-height: 0%;">Rs.300 <span>OFF</spans></h2>
+            <br>
+            <h4 id="code2" style="line-height: 0%;">FLYMMT300</h4>
+            <p style="font-weight: lighter; font-size: 12px;">*Valid on Min 2 Tickets Booking</p>
+            <button id="btn2" class="button1" onclick="copyCode(this.id)">COPY CODE</button>
+        </div>
+
+          <div class="card">
+            <h1>Coupon Code</h1>
+              <h4>Flat</h4>
+              <h2 style="line-height: 0%;">Rs.150 <span>OFF</span></h2>
+              <br>
+              <h4 id="code3" style="line-height: 0%;">FLYMMT150</h4>
+              <p style="font-weight: lighter; font-size: 12px;">*Valid on Min 1 Tickets Booking</p>
+              <button id="btn3" class="button1" onclick="copyCode(this.id)">COPY CODE</button>
+          </div>
+
+          <div class="card">
+            <h1>Coupon Code</h1>
+            <h4>Upto</h4>
+            <h2 style="line-height: 0%;">Rs.2500 <span>OFF</span></h2>
+            <br>
+            <h4 id="code4" style="line-height: 0%; margin-bottom: 48px; line-height: 0;">MMTBEST</h4>
+            <button id="btn4" class="button1" style="line-height: 15px;" onclick="copyCode(this.id)">COPY CODE</button>
+        </div>
+
+
+        <p id = "close" onclick="expandContract()">x</p>
+
+        </div>
+
+                
+        </div>
+        
+      </div>    
+      
+    </div>   
+ 
+      <label for="paste_code" style="position: absolute; top: 449px; left: 400px;">Paste the Code here:</label>
+      <input type="text" style="position: absolute; top: 449px; left: 542px;" name="paste_code">
+
+
+
+  </body>
+
+
+  </html>
